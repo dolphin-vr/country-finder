@@ -9,7 +9,7 @@ export const CountryList = ({ countries }) => {
     <Grid>
       {normCountries.map(el => (
         <GridItem key={el.id}>
-          <Link to={`country/${el.id}`} state={{ from: location }}>
+          <Link to={`/country/${el.id}`} state={{ from: location }}>
             <img src={el.flag} alt={el.country} />
             <span>{el.country}</span>
           </Link>
